@@ -1,7 +1,38 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  "compilerOptions": {
+    // Language and library targeting
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    // Module handling and resolution
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "jsx": "react-jsx",
+    // Type checking and safety
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    // Code cleanliness and linting
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    // Module extras
+    "resolveJsonModule": true,
+    // Type declaration inclusions
+    "types": [
+      "bun-types",
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src",
+    "vite.config.ts"
   ]
 }
