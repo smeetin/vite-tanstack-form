@@ -36,9 +36,7 @@
       }
     },
     "CSS": {
-      "language_servers": [
-        "tailwindcss-language-server"
-      ],
+      "language_servers": ["tailwindcss-language-server"],
       "formatter": {
         "language_server": {
           "name": "biome"
