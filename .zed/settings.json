@@ -24,7 +24,7 @@
         "source.organizeImports.biome": true
       }
     },
-    "JSX": {
+    "TSX": {
       "formatter": {
         "language_server": {
           "name": "biome"
@@ -35,7 +35,10 @@
         "source.organizeImports.biome": true
       }
     },
-    "TSX": {
+    "CSS": {
+      "language_servers": [
+        "tailwindcss-language-server"
+      ],
       "formatter": {
         "language_server": {
           "name": "biome"
